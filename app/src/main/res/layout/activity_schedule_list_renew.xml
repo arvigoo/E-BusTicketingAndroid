@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    android:background="#F4F4F4"
+    tools:context=".ScheduleListRenew">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativedate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="backbutton"
+                android:src="@drawable/ic_back"></ImageView>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="125dp"
+                android:layout_toRightOf="@+id/backbutton"
+                android:src="@drawable/ic_logo_black"></ImageView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/departure"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/txtviewdeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departure"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtdeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtviewdeparture"
+                        android:text="@string/medan"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtviewdeparture"
+                        android:layout_marginLeft="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_toRightOf="@+id/txtdeparture"
+                        android:src="@drawable/ic_dropdown"></ImageView>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/departure"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/txtviewarrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtarrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtviewarrival"
+                        android:text="@string/medan"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtviewarrival"
+                        android:layout_marginLeft="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_toRightOf="@+id/txtarrival"
+                        android:src="@drawable/ic_dropdown"></ImageView>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/departure"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/Date"></TextView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvseat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/departure"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@id/cvdate"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="@string/seat"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvfilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/departure"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@id/cvseat"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:text="Sort by Best experience"
+                    android:textColor="@color/primarylight"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"></TextView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/relativedate"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190sdp"
+            app:cardCornerRadius="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/txtnamabis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sempati Star"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/primarylight"></TextView>
+
+                <TextView
+                    android:textColor="@color/textsecondarycolor"
+                    android:id="@+id/txtplatkode"
+                    android:layout_toRightOf="@+id/txtnamabis"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Platkode"
+                    ></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/boxrating"
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_toRightOf="@+id/txtplatkode"
+                    android:backgroundTint="@color/secondarycolor"
+                    android:elevation="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_5sdp">
+                        <ImageView
+                            android:id="@+id/starRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:text="4.9/5"
+                            android:textStyle="bold"
+                            android:textColor="@color/textcolorRating"></TextView>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtJumlahRating"
+                    android:layout_below="@+id/boxrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_215sdp"
+                    android:text="@string/Jumlah_Rating"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtRv"
+                    android:layout_below="@id/txtJumlahRating"
+                    android:layout_marginLeft="@dimen/_195sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/jam_keberangkatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnamabis"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/Jam_keberangkatan"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/grid"
+                    android:layout_below="@id/jam_keberangkatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/ic_grid" />
+
+                <TextView
+                    android:id="@+id/jam_kedatangan"
+                    android:layout_below="@id/grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Jam_kedatangan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTerminalKeberangkatan"
+                    android:layout_toRightOf="@+id/jam_keberangkatan"
+                    android:layout_marginTop="@dimen/_34sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Terminal_keberangkatan"></TextView>
+
+                <TextView
+                    android:id="@+id/txtKota_keberangkatan"
+                    android:layout_below="@id/txtTerminalKeberangkatan"
+                    android:layout_toRightOf="@id/jam_keberangkatan"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kota_keberangkatan"></TextView>
+
+                <TextView
+                    android:id="@+id/txtTerminalKedatangan"
+                    android:layout_toRightOf="@id/jam_kedatangan"
+                    android:layout_below="@id/txtKota_keberangkatan"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Terminal_kedatangan"></TextView>
+
+                <TextView
+                    android:id="@+id/txtkota_kedatangan"
+                    android:layout_below="@id/txtTerminalKedatangan"
+                    android:layout_toRightOf="@id/jam_kedatangan"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Kota_Kedatangan"
+                    ></TextView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="13dp">
+
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_marginTop="@dimen/_135sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/primarylight"></View>
+
+                <TextView
+                    android:id="@+id/txtHargaTiket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/HargaTiket"
+                    android:textColor="@color/primarylight"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_below="@id/txtHargaTiket"
+                    android:text="/Seat"
+                    android:textStyle="bold"></TextView>
+
+                <Button
+                    android:id="@+id/btnBookNow"
+                    android:layout_below="@id/view"
+                    android:layout_toRightOf="@id/txtHargaTiket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:text="BOOK NOW">
+                </Button>
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

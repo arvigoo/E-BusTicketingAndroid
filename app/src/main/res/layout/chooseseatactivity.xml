@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_20sdp"
+    android:gravity="center"
+    tools:context=".seekbar">
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_135sdp"
+        android:text="@string/strings"
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview1"
+        android:text="@string/older_than_2_years_old_should_buy_a_seat"></TextView>
+
+    <TextView
+        android:id="@+id/txtviewnumberseat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="2"
+        android:textColor="#5B2FA7"
+        android:textSize="@dimen/_36sdp"></TextView>
+
+    <TextView
+        android:id="@+id/txtview3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtviewnumberseat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Passenger"></TextView>
+
+    <SeekBar
+        android:id="@+id/seekbarseat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview3"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:thumbTint="@color/primarylight"></SeekBar>
+
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/seekbarseat"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:backgroundTint="#EAEAEA"
+        android:text="Cancel"
+        android:textColor="@color/primarylight"></Button>
+
+    <Button
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/seekbarseat"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_toRightOf="@id/cancel_button"
+        android:text="Select"
+        android:textColor="@color/white"></Button>
+
+
+
+</RelativeLayout>

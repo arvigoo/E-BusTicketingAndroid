@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    tools:context=".bustripdetail.Home">
+
+    <ImageView
+        android:id="@+id/buxlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_black">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imagejohn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buxlogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_illustrationhomejohn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagejohn"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/textdepart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_35sdp"
+                android:text="Departure"></TextView>
+
+            <LinearLayout
+                android:id="@+id/departure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdepart"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_icondeparture"></ImageView>
+
+                <EditText
+                    android:id="@+id/edittextdeparture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textdepart"
+                    android:hint="Try'pekanbaru'"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textdestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/departure"
+                android:paddingLeft="@dimen/_35sdp"
+                android:text="Arrival"></TextView>
+
+            <LinearLayout
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdestination"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_iconarrival"></ImageView>
+
+                <EditText
+                    android:id="@+id/edittextdestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textdestination"
+                    android:hint="Try'Medan'"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/destination"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_35sdp"
+                        android:text="Passenger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_iconppl" />
+
+                        <EditText
+                            android:id="@+id/seat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="1 ppl" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_35sdp"
+                        android:text="Date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_icondate"></ImageView>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select Date"></EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/cardviewhome"
+        android:layout_centerHorizontal="true"
+        android:text="SEARCH BUS"></Button>
+
+</RelativeLayout>

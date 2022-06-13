@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FinalProject4</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="older_than_2_years_old_should_buy_a_seat">Older than 2 years old should buy a seat</string>
+    <string name="strings">Select How Much Passenger</string>
+    <string name="medan">Medan</string>
+    <string name="Date">Fri, 23 Jul 2019</string>
+    <string name="seat">Seat 2</string>
+    <string name="Platkode">P 1923 NM</string>
+    <string name="Jam_keberangkatan">17.35</string>
+    <string name="Jam_kedatangan">09:10</string>
+    <string name="Terminal_keberangkatan">Terminal Ampelas</string>
+    <string name="kota_keberangkatan">medan</string>
+    <string name="Terminal_kedatangan">Terminal Bandaraya</string>
+    <string name="Kota_Kedatangan">Riau</string>
+    <string name="HargaTiket">Rp166.000,00</string>
+    <string name="Jumlah_Rating">120</string>
+</resources>
