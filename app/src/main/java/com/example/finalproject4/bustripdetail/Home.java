@@ -21,6 +21,7 @@ public class Home extends AppCompatActivity {
     SeekBar seekBar;
     EditText editTextseat;
     Button cancelbutton;
+    Button selectButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,9 @@ public class Home extends AppCompatActivity {
                 alertDialog.dismiss();
             }
         });
+
+        selectButton = dialogView.findViewById(R.id.select_Button);
+
 
 
     }

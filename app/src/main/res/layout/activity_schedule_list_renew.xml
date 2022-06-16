@@ -201,7 +201,7 @@
                     android:id="@+id/txtnamabis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sempati Star"
+                    android:text="@string/txtnamabis"
                     android:textStyle="bold"
                     android:textSize="@dimen/_14sdp"
                     android:textColor="@color/primarylight"></TextView>
@@ -391,6 +391,8 @@
 
 
         </androidx.cardview.widget.CardView>
+
+
 
 
 

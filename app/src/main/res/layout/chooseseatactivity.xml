@@ -62,11 +62,12 @@
         android:textColor="@color/primarylight"></Button>
 
     <Button
-        android:layout_marginTop="@dimen/_50sdp"
+        android:id="@+id/select_Button"
         android:layout_width="@dimen/_120sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_below="@id/seekbarseat"
         android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         android:layout_toRightOf="@id/cancel_button"
         android:text="Select"
         android:textColor="@color/white"></Button>

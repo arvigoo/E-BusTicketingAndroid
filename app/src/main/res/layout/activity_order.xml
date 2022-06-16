@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    tools:context=".orderActivity">
+
+    <TextView
+        android:id="@+id/txtyourtickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/your_ticket"
+        android:textStyle="bold"
+        android:textColor="@color/black"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/txtyourtickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/txtbookdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bookid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:backgroundTint="@color/primarylight">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtBookingDate"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/booking_date"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="@dimen/_20sdp"></TextView>
+
+                        <TextView
+                            android:layout_toRightOf="@id/txtBookingDate"
+                            android:id="@+id/bookno"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Book No."
+                            android:textColor="@color/white"></TextView>
+
+                        <TextView
+                            android:layout_toRightOf="@id/bookno"
+                            android:id="@+id/txtBookingNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bookingnumber"
+                            android:textColor="@color/white"></TextView>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/txtbookdetail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/txtnamabis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtnamabis"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/primarylight"></TextView>
+
+                <TextView
+                    android:textColor="@color/textsecondarycolor"
+                    android:id="@+id/txtplatkode"
+                    android:layout_toRightOf="@+id/txtnamabis"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Platkode"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/jam_keberangkatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnamabis"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/Jam_keberangkatan"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"></TextView>
+                <TextView
+                    android:id="@+id/txtTerminalKeberangkatan"
+                    android:layout_toRightOf="@+id/jam_keberangkatan"
+                    android:layout_marginTop="@dimen/_34sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Terminal_keberangkatan"></TextView>
+
+                <TextView
+                    android:id="@+id/txtKota_keberangkatan"
+                    android:layout_below="@id/txtTerminalKeberangkatan"
+                    android:layout_toRightOf="@id/jam_keberangkatan"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kota_keberangkatan"></TextView>
+
+                <ImageView
+                    android:layout_toRightOf="@id/txtTerminalKeberangkatan"
+                    android:layout_below="@id/txtplatkode"
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:src="@drawable/ic_check"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtpaid"
+                    android:layout_below="@id/txtplatkode"
+                    android:layout_toRightOf="@id/check"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#61CA5F"
+                    android:textStyle="bold"
+                    android:text="Paid"></TextView>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

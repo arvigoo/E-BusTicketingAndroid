@@ -23,4 +23,12 @@
     <string name="Kota_Kedatangan">Riau</string>
     <string name="HargaTiket">Rp166.000,00</string>
     <string name="Jumlah_Rating">120</string>
+    <string name="selected_seat">Selected Seat</string>
+    <string name="reserved">Reserved</string>
+    <string name="avalaible">Avalaible</string>
+    <string name="your_ticket">Your Tickets</string>
+    <string name="booking_date">23 Jul 2019. 17:35</string>
+    <string name="bookingnumber">230719-0001</string>
+    <string name="txtnamabis">Sempati Star</string>
+    <string name="please_give_your_rating">Please Give Your Rating</string>
 </resources>

@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4">
         <activity
+            android:name=".orderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Select_Seat"
+            android:exported="false" />
+        <activity
             android:name=".ScheduleListRenew"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".SearchDestinationActivity"
             android:exported="false" />
@@ -26,7 +30,6 @@
         <activity
             android:name=".AfterSplashScreen"
             android:exported="false" />
-
         <activity
             android:name=".SplashScreen"
             android:exported="false" />
@@ -39,7 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ticketList"
             android:exported="false" />
@@ -48,8 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

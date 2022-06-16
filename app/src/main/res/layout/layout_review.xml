@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/textTrip"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Was Your Trip"
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtcompleted"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You’ve been completed your trip with this detail"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/tvDetail"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_below="@id/txtcompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PO Name"></TextView>
+
+            <TextView
+                android:layout_below="@id/txtPoName"
+                android:id="@+id/txtnamabis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/txtnamabis"
+                android:textStyle="bold"
+                android:textColor="@color/black"></TextView>
+
+            <TextView
+                android:id="@+id/txtNobus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_toRightOf="@id/txtPoName"
+                android:text="No Bus"></TextView>
+
+            <TextView
+                android:id="@+id/txtplatkode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNobus"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_toRightOf="@+id/txtPoName"
+                android:text="@string/Platkode"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_30sdp"
+
+                ></TextView>
+
+            <TextView
+                android:layout_below="@id/txtnamabis"
+                android:id="@+id/txtdeparturedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Date"></TextView>
+
+            <TextView
+                android:id="@+id/txtvdate"
+                android:layout_below="@id/txtdeparturedate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/Date"
+                android:textStyle="bold"
+                android:textColor="@color/black"></TextView>
+
+
+            <TextView
+                android:layout_toRightOf="@id/txtPoName"
+                android:layout_below="@id/txtplatkode"
+                android:id="@+id/txtTicketStatus"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Status"></TextView>
+
+            <TextView
+                android:id="@+id/TicketStatus"
+                android:layout_below="@id/txtTicketStatus"
+                android:layout_toRightOf="@id/txtPoName"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_check"
+                android:text="Issued"
+                android:textColor="#61CA5F"
+                android:drawablePadding="@dimen/_10sdp"
+                ></TextView>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/tvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/giveratting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/please_give_your_rating" />
+
+
+            <LinearLayout
+                android:id="@+id/star"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/giveratting"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/Star1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rating"
+                    android:backgroundTint="@color/secondarycolor" />
+
+                <CheckedTextView
+                    android:id="@+id/Star2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rating"
+                    android:backgroundTint="@color/secondarycolor" />
+
+                <CheckedTextView
+                    android:id="@+id/Star3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rating"
+                    android:backgroundTint="@color/secondarycolor" />
+
+                <CheckedTextView
+                    android:id="@+id/Star4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rating"
+                    android:backgroundTint="@color/secondarycolor" />
+
+                <CheckedTextView
+                    android:id="@+id/Star5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rating"
+                    android:backgroundTint="@color/secondarycolor" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
