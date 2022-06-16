@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
     PopupWindow pwindo;
     TextView textviewSeekbar;
     SeekBar seekBar;
-    EditText editTextseat;
+    EditText editTextseat,editTextDeparture,editTextDestination;
     Button cancelbutton;
     Button selectButton;
 
@@ -36,8 +36,26 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        editTextDeparture = findViewById(R.id.edittextdeparture);
+        editTextDeparture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchDeparturePopUP();
+            }
+        });
+
+        editTextDestination = findViewById(R.id.edittextdestination);
+        editTextDestination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchDestinationPopUP();
+            }
+        });
+
 
     }
+
+
 
     public void addPopupSeekbar(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -80,6 +98,24 @@ public class Home extends AppCompatActivity {
 
 
 
+    }
+
+    public void searchDeparturePopUP(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater layoutInflater = this.getLayoutInflater();
+        View searchDeparturePopUpView = layoutInflater.inflate(R.layout.search_departure, null);
+        builder.setView(searchDeparturePopUpView);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+    private void searchDestinationPopUP() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater layoutInflater = this.getLayoutInflater();
+        View searchDestinationPopUpView = layoutInflater.inflate(R.layout.activity_search_destination, null);
+        builder.setView(searchDestinationPopUpView);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
 }

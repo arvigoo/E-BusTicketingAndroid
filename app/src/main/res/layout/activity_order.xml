@@ -17,6 +17,7 @@
         android:textColor="@color/black"></TextView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/ticketList"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_below="@id/txtyourtickets"
         android:layout_width="match_parent"
@@ -78,9 +79,9 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_below="@id/txtbookdetail"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_120sdp"
+                android:layout_below="@id/txtbookdetail"
                 android:padding="@dimen/_20sdp">
 
                 <TextView
@@ -88,20 +89,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txtnamabis"
-                    android:textStyle="bold"
+                    android:textColor="@color/primarylight"
                     android:textSize="@dimen/_14sdp"
-                    android:textColor="@color/primarylight"></TextView>
+                    android:textStyle="bold"></TextView>
 
                 <TextView
-                    android:textColor="@color/textsecondarycolor"
                     android:id="@+id/txtplatkode"
-                    android:layout_toRightOf="@+id/txtnamabis"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/txtnamabis"
                     android:text="@string/Platkode"
-                    ></TextView>
+                    android:textColor="@color/textsecondarycolor"></TextView>
 
                 <TextView
                     android:id="@+id/jam_keberangkatan"
@@ -110,47 +110,48 @@
                     android:layout_below="@+id/txtnamabis"
                     android:layout_marginTop="@dimen/_15sdp"
                     android:text="@string/Jam_keberangkatan"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_15sdp"></TextView>
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"></TextView>
+
                 <TextView
                     android:id="@+id/txtTerminalKeberangkatan"
-                    android:layout_toRightOf="@+id/jam_keberangkatan"
-                    android:layout_marginTop="@dimen/_34sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_34sdp"
+                    android:layout_toRightOf="@+id/jam_keberangkatan"
                     android:text="@string/Terminal_keberangkatan"></TextView>
 
                 <TextView
                     android:id="@+id/txtKota_keberangkatan"
-                    android:layout_below="@id/txtTerminalKeberangkatan"
-                    android:layout_toRightOf="@id/jam_keberangkatan"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTerminalKeberangkatan"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/jam_keberangkatan"
                     android:text="@string/kota_keberangkatan"></TextView>
 
                 <ImageView
-                    android:layout_toRightOf="@id/txtTerminalKeberangkatan"
-                    android:layout_below="@id/txtplatkode"
                     android:id="@+id/check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_below="@id/txtplatkode"
                     android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/txtTerminalKeberangkatan"
                     android:src="@drawable/ic_check"></ImageView>
 
                 <TextView
                     android:id="@+id/txtpaid"
-                    android:layout_below="@id/txtplatkode"
-                    android:layout_toRightOf="@id/check"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/txtplatkode"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_toRightOf="@id/check"
+                    android:text="Paid"
                     android:textColor="#61CA5F"
-                    android:textStyle="bold"
-                    android:text="Paid"></TextView>
+                    android:textStyle="bold"></TextView>
 
 
             </RelativeLayout>
