@@ -31,4 +31,14 @@
     <string name="bookingnumber">230719-0001</string>
     <string name="txtnamabis">Sempati Star</string>
     <string name="please_give_your_rating">Please Give Your Rating</string>
+    <string name="_9_10">9/10</string>
+    <string name="see_picture">See Picture</string>
+    <string name="friday_23_jul_2019">Friday, 23 Jul 2019</string>
+    <string name="medanCaps">MEDAN</string>
+    <string name="pekanbaruCaps">PEKANBARU</string>
+    <string name="plus">+</string>
+    <string name="_1d">1d</string>
+    <string name="try_riau">\"Try Riau\"</string>
+    <string name="try_medan">\"Try Medan\"</string>
+
 </resources>

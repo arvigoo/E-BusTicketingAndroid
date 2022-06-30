@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4">
         <activity
+            android:name=".OrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".SetupPhoneNumber"
+            android:exported="false" />
+        <activity
+            android:name=".HomeRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".HomePicker"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".FinishRegistration"
+            android:exported="false" />
+        <activity
             android:name=".BusDetail"
             android:exported="false" />
         <activity
@@ -44,7 +62,7 @@
         </activity>
         <activity
             android:name=".bustripdetail.Home"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ticketList"
             android:exported="false" />

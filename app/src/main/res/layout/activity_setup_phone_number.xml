@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundIqbal"
+    tools:context=".SetupPhoneNumber">
+
+    <ImageView
+        android:id="@+id/almostThere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/ic_almost_there" />
+
+    <ImageView
+        android:id="@+id/fillYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fill_your_phone_number_below__so_we_can_easily_catch_you_up_"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_below="@+id/almostThere"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/phoneLook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fillYour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:src="@drawable/ic_phone_look" />
+
+    <ImageView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone_number"
+        android:layout_below="@id/phoneLook"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_40sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/phoneCard"
+        android:backgroundTint="@color/white"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp" >
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15sdp" />
+
+        <EditText
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="your phone numbers here"
+            android:textColor="#D8D8D8"
+            android:inputType="number" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@id/phoneCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:backgroundTint="#673AB7"
+        android:textColor="@color/white"
+        android:text="save number" />
+
+</RelativeLayout>

@@ -49,9 +49,29 @@
         <entry key="..\:/Kuliah/Studi Independen Moprog/FinalProject4_E-bus/app/src/main/res/layout/layout_review.xml" value="0.3625" />
         <entry key="..\:/Kuliah/Studi Independen Moprog/FinalProject4_E-bus/app/src/main/res/layout/search_departure.xml" value="0.3625" />
         <entry key="..\:/Kuliah/Studi Independen Moprog/FinalProject4_E-bus/app/src/main/res/layout/seat_chooser.xml" value="0.3625" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/drawable/ic_star.xml" value="0.1" />
         <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_after_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_bus_detail.xml" value="0.25" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_finish_registration.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_home2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_home_picker.xml" value="0.2" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_home_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_login_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_order.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_order_detail.xml" value="0.25" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_schedule_list_renew.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_search_destination.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_select_seat.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_setup_phone_number.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/activity_ticket_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/chooseseatactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/layout_review.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/USER/Hacktiv8 Studi Independen/FinalProject4_TicketBus/app/src/main/res/layout/search_departure.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
